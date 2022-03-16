@@ -1,0 +1,174 @@
+#hero--section {
+  background-image: url(../../assets/img/fundo-hero.jpg);
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.hero--content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero--content p {
+  font-weight: bold;
+  text-align: center;
+  width: 60%;
+}
+
+.hero--content a {
+  margin-top: 20px;
+  color: #fff;
+  padding: 5px 20px;
+  background-color: rgb(47, 86, 109);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.hero--content a:hover {
+  background-color: rgb(58, 105, 133);
+  transition: all ease-in-out .25s;
+}
+
+.home--title {
+  margin: 5rem 0 5rem 0;
+  text-align: center;
+}
+.home--subtitle {
+  margin: 6rem 0 1rem 0;
+}
+
+#service--section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-service {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-service img {
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.24);
+}
+
+.card-service > .description {
+  padding: 10px 20px;
+  width: 100%;
+}
+.card-service > .description > h4 {
+  font-weight: bold;
+  margin: 1rem 0 1.8rem 0;
+}
+
+#about--section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about--content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about--description p {
+  padding: 10px 20px;
+}
+
+.choice--content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+.card--choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(186, 203, 250);
+  margin: 10px;
+  min-height: 12rem;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.card--choices i {
+  font-size: 25px;
+}
+
+.depoiments--content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card--depoiments {
+  margin: 5px;
+  box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.24);
+  padding: 0;
+  border-radius: 20px;
+}
+
+.card--depoiments img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.card--depoiments .depoiment{
+  padding: 10px;
+}
+
+.card--depoiments .depoiment p {
+  margin: 10px 0;
+}
+
+.card--depoiments .depoiment h6 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media screen and (max-width: 880px) {
+  .card-service {
+    flex-wrap: wrap;
+  }
+
+  .card-service img {
+    width: 100%;
+  }
+
+  .card-service > .description {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about--content {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .about--description p {
+    margin-top: 20px;
+  }
+}
