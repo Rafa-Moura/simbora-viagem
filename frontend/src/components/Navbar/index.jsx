@@ -1,10 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { ReactComponent as LogoNavbar } from "../../assets/img/LogoNavbar.svg";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/" rel="noreferrer">
+        <Link to="/">
+          <LogoNavbar />
+        </Link>
+        <a className="navbar-brand m-0" href="/" rel="noreferrer">
           SimboraViagem
         </a>
         <button

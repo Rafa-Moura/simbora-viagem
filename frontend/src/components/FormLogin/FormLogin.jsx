@@ -1,43 +1,70 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { BASE_URL } from "../../requests";
+import axios from "axios";
 
 import "./styles.css";
 
 function Formlogin() {
+  const [user, setUser] = useState("");
+  const navigate = useNavigate();
+  let login = "";
+  let senha = "";
+
+  useEffect(() => {
+    axios.get(`${BASE_URL}/usuario/1`).then((response) => {
+      const data = response.data;
+      setUser(data);
+    });
+  }, []);
+
+  login = user.email;
+  senha = user.senha;
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const emailUsuario = event.target.email.value;
+    const senhaUsuario = event.target.password.value;
+
+    if (emailUsuario === login && senhaUsuario === senha) {
+      alert("Logado com sucesso")
+      navigate("/admin");
+    } else {
+      alert("Dados incorretos")
+      return;
+    }
+  }
+
   return (
     <section id="form-section" className="container">
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">
-            Email address
+      <form onSubmit={handleSubmit}>
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label">
+            Email
           </label>
           <input
             type="email"
-            class="form-control"
-            id="exampleInputEmail1"
+            className="form-control"
+            id="email"
             aria-describedby="emailHelp"
+            placeholder="Digite seu email"
+            required
           />
-          <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
-          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">
-            Password
+        <div className="mb-3">
+          <label htmlFor="password" className="form-label">
+            Senha
           </label>
           <input
             type="password"
-            class="form-control"
-            id="exampleInputPassword1"
+            className="form-control"
+            id="password"
+            placeholder="Digite sua senha"
+            required
           />
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">
-            Check me out
-          </label>
-        </div>
-        <button type="submit" class="btn btn-primary">
-          Submit
+        <button type="submit" className="btn btn-primary">
+          Entrar
         </button>
       </form>
     </section>

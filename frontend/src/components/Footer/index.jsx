@@ -13,16 +13,16 @@ function Footer() {
       <div className="right--side col-sm-12 col-lg-6">
         <div className="social--content">
           <a href="/" rel="noreferrer">
-            <i class="bi bi-github"></i>
+            <i className="bi bi-github"></i>
           </a>
           <a href="/" rel="noreferrer">
-            <i class="bi bi-linkedin"></i>
+            <i className="bi bi-linkedin"></i>
           </a>
           <a href="/" rel="noreferrer">
-            <i class="bi bi-whatsapp"></i>
+            <i className="bi bi-whatsapp"></i>
           </a>
           <a href="/" rel="noreferrer">
-            <i class="bi bi-instagram"></i>
+            <i className="bi bi-instagram"></i>
           </a>
         </div>
         <p> &copy; Desenvolvido por Rafael Moura</p>

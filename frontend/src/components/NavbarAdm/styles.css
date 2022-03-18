@@ -1,0 +1,35 @@
+.navbar--admin {
+    background-color: rgb(65, 139, 173);
+}
+
+.navbar--admin a {
+    color: #fff !important;
+    border-bottom: 1px solid transparent;
+    margin-left: 20px;
+    transition: all ease-in-out .25s;
+}
+
+.navbar--admin a:hover {
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav-adm {
+    margin: 0 20px;
+}
+
+.nav--container i {
+    color: #fff;
+    font-size: 25px;
+    margin: 0 -15px 0 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-nav-adm a{
+        margin: 0 !important;
+        font-size: 16px;
+    }
+    .adm-logo {
+        font-size: 16px;
+        margin: 0 auto;
+    }
+}

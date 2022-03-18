@@ -7,7 +7,6 @@ import FundoHotel from "../../assets/img/fundo-hotel.jpg";
 import FundoPacote from "../../assets/img/fundo-pacote.jpg";
 import HomemImg from "../../assets/img/homem.jpg";
 import { ReactComponent as Logo } from "../../assets/img/Logo.svg";
-import Footer from "../../components/Footer";
 
 function Home() {
   return (
@@ -103,30 +102,30 @@ function Home() {
             <h2 className="home--title">POR QUE NOS ESCOLHER?</h2>
             <div className="choice--content row">
               <div className="card--choices col-sm-6 col-lg-4 col-xl-3">
-                <i class="bi bi-cash-coin"></i>
+                <i className="bi bi-cash-coin"></i>
                 <p>Melhores Preços e Condições! Aqui seu dinheiro vale mais</p>
               </div>
               <div className="card--choices col-sm-6 col-lg-4 col-xl-3">
-                <i class="bi bi-headset"></i>
+                <i className="bi bi-headset"></i>
                 <p>
                   Atendimento de qualidade. Suporte 24h de seg a sex para te
                   auxliar!
                 </p>
               </div>
               <div className="card--choices col-sm-6 col-lg-4 col-xl-3">
-                <i class="bi bi-hourglass-bottom"></i>
+                <i className="bi bi-hourglass-bottom"></i>
                 <p>Agilidade e praticidade!</p>
               </div>
               <div className="card--choices col-sm-6 col-lg-4 col-xl-3">
-                <i class="bi bi-house-door-fill"></i>
+                <i className="bi bi-house-door-fill"></i>
                 <p>Os melhores e mais aconxegantes hotéis a sua espera!</p>
               </div>
               <div className="card--choices col-sm-6 col-lg-4 col-xl-3">
-                <i class="bi bi-cash-coin"></i>
+                <i className="bi bi-cash-coin"></i>
                 <p>Melhores Preços e Condições! Aqui seu dinheiro vale mais</p>
               </div>
               <div className="card--choices col-sm-6 col-lg-4 col-xl-3">
-                <i class="bi bi-cash-coin"></i>
+                <i className="bi bi-cash-coin"></i>
                 <p>Melhores Preços e Condições! Aqui seu dinheiro vale mais</p>
               </div>
             </div>
@@ -172,7 +171,6 @@ function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

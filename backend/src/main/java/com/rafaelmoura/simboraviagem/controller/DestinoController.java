@@ -28,7 +28,7 @@ public class DestinoController {
 	@GetMapping(value = "/")
 	public ResponseEntity<List<Destino>> findAll() {
 		List<Destino> destinos = (List<Destino>) destinoRepository.findAll();
-
+		
 		return new ResponseEntity<List<Destino>>(destinos, HttpStatus.OK);
 	}
 
