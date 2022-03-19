@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 import Destinos from "./pages/Destinos";
 import Login from "./pages/Login";
 import Hoteis from "./pages/Hoteis";
@@ -9,7 +9,6 @@ import Home from "./pages/Home";
 import Admin from "./pages/Admin";
 import AdmDestino from "./pages/AdmDestino";
 import AdmHotel from "./pages/AdmHotel";
-
 
 function App() {
   return (
@@ -24,9 +23,6 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/admin/destinos" element={<AdmDestino />} />
         <Route path="/admin/hoteis" element={<AdmHotel />} />
-        {/* <Route path="/form">
-          <Route path=":movieId" element={<Form />} />
-        </Route> */}
       </Routes>
       <Footer />
     </BrowserRouter>

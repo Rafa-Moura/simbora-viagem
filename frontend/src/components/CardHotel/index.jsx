@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./styles.css";
 
 function CardHotel(props) {
@@ -16,19 +15,6 @@ function CardHotel(props) {
         </div>
         <p>{`${props.cidade}, ${props.pais}`}</p>
         <p>{`Diária: R$ ${props.diaria}`}</p>
-      </div>
-      <div className="btn--action">
-        <Link to={`/hotel/${props.id}`}>
-          <div className="btn dsmovie-btn-edit">
-            <i className="bi bi-pencil-square"></i>Editar
-          </div>
-        </Link>
-        <Link to={`/hotel/deletar/${props.id}`}>
-          <div className="btn dsmovie-btn-delete">
-            <i className="bi bi-trash"></i>
-            Excluir
-          </div>
-        </Link>
       </div>
     </div>
   );

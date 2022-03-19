@@ -20,7 +20,7 @@ function Hoteis() {
       <div className="hotel--content container">
         <div className="row">
           {hotel.map((item) => (
-            <div key={item.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+            <div key={item.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3 card-hotel">
               <CardHotel
                 hotel={item.hotel}
                 cidade={item.cidade}

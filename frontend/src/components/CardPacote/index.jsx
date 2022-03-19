@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./styles.css";
 
 function CardPacote(props) {
@@ -17,19 +16,6 @@ function CardPacote(props) {
       <p>{props.pais}</p>
       <p><s>{`Valor passagem: R$ ${props.valor}`}</s></p>
       <p className="text-success">{`Valor promocional: R$ ${props.promocional}`}</p>
-    </div>
-    <div className="btn--action">
-      <Link to={`/destino/${props.id}`}>
-        <div className="btn dsmovie-btn-edit">
-          <i className="bi bi-pencil-square"></i>Editar
-        </div>
-      </Link>
-      <Link to={`/destino/${props.id}`}>
-        <div className="btn dsmovie-btn-delete">
-          <i className="bi bi-trash"></i>
-          Excluir
-        </div>
-      </Link>
     </div>
   </div>
   );

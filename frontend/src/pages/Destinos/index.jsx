@@ -20,7 +20,7 @@ function Destinos() {
       <div className="destiny--content container">
         <div className="row">
           {destino.map((item) => (
-            <div key={item.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+            <div key={item.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3 card-destino">
               <CardDestiny
                 cidade={item.cidade}
                 pais={item.pais}

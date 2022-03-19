@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./styles.css";
 
 function CardDestiny(props) {
@@ -16,19 +15,6 @@ function CardDestiny(props) {
         </div>
         <p>{props.pais}</p>
         <p>{`Valor passagem: R$ ${props.valor}`}</p>
-      </div>
-      <div className="btn--action">
-        <Link to={`/destino/${props.id}`}>
-          <div className="btn dsmovie-btn-edit">
-            <i className="bi bi-pencil-square"></i>Editar
-          </div>
-        </Link>
-        <Link to={`/destino/${props.id}`}>
-          <div className="btn dsmovie-btn-delete">
-            <i className="bi bi-trash"></i>
-            Excluir
-          </div>
-        </Link>
       </div>
     </div>
   );

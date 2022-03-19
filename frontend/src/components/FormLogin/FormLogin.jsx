@@ -1,36 +1,23 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { BASE_URL } from "../../requests";
-import axios from "axios";
+// import { BASE_URL } from "../../requests";
+// import axios from "axios";
 
 import "./styles.css";
 
 function Formlogin() {
-  const [user, setUser] = useState("");
   const navigate = useNavigate();
-  let login = "";
-  let senha = "";
-
-  useEffect(() => {
-    axios.get(`${BASE_URL}/usuario/1`).then((response) => {
-      const data = response.data;
-      setUser(data);
-    });
-  }, []);
-
-  login = user.email;
-  senha = user.senha;
 
   function handleSubmit(event) {
     event.preventDefault();
     const emailUsuario = event.target.email.value;
     const senhaUsuario = event.target.password.value;
 
-    if (emailUsuario === login && senhaUsuario === senha) {
-      alert("Logado com sucesso")
+    if (emailUsuario === "admin@simbora.com" && senhaUsuario === "123456") {
+      alert("Logado com sucesso");
       navigate("/admin");
     } else {
-      alert("Dados incorretos")
+      alert("Dados incorretos");
       return;
     }
   }
