@@ -1,3 +1,40 @@
 .admin--section {
-    min-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
+
+.card--count--city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.24);
+  padding: 20px;
+  background-color: rgb(71, 149, 180);
+  color: #fff;
+}
+
+.card--count--city h5 {
+  margin-top: 3rem;
+}
+
+.card--count--hotel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.24);
+    padding: 20px;
+    background-color: rgb(71, 149, 180);
+    color: #fff;
+  }
+  
+  .card--count--hotel h5 {
+    margin-top: 3rem;
+  }
